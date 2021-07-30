@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+
+
+    body {
+        
+        font-family: Arial, sans-serif;
+        background-color:white;
+        background-image: "_images/textura-de-metal-riscada-fundo-de-chapa-de-aco-escovado_51195-3554.jpg";
+        color: 
+    }
+
+    p {
+        text-align: justify;
+        text-indent: 50px; 
+     }
+
+    a {
+        color: #606060;
+        text-decoration: none;
+     }
+
+     a:hover {
+        text-decoration: underline;
+
+     }
+
+div#interface {
+    width: 1200px;
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 0px 10px rgb(68, 66, 66);
+    padding: 10px ;
+
+}
+
+
+header#cabecalho img#icone {
+    position:absolute;
+    left: 1400px;
+    top: 100px;
+
+}
+
+header#cabecalho {
+    border-bottom: 1px gray solid;
+    height: 170px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 110px;
+   
+
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 35pt;
+    color: grey;
+    padding: 0px;
+    margin-bottom: 10px;
+
+}
+
+header#cabecalho h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15pt;
+    padding: 0px;
+    margin-bottom: 10px;
+    
+}
+
+/* Formatação de imagens com legendas */
+
+figure.foto_legenda {
+        position: relative;
+        border: 8px solid white;  
+        box-shadow: 1px 1px 4px black;  
+}
+
+figure.foto_legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto_legenda figcaption {
+    opacity: 0;
+    position:absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color:white;
+    width:100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+
+figure.foto_legenda:hover figcaption {
+    opacity:1;
+}
+
+
+/*Formatação Menu*/
+
+nav#menu {
+    display: block;
+
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -8px;
+    left: 935px;
+    
+}
+
+nav#menu li{
+    display:inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #747272;
+
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color:black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+section#corpo {
+    display: block;
+    width: 600px;
+    float: left;
+    border-right: 1px solid gray;
+    padding-right: 25px;
+
+}
+
+article#principal h2 {
+    font-size: 12;
+    color:rgb(34, 34, 34);
+    background-color: rgb(172, 171, 171);
+    padding: 5px 0px 10px 10px;
+    margin: 10px 0px 10px 0px;
+
+
+}
+
+header#cabecalho-art h1 {
+    font-family: 'FonteLogo';
+    font-size: 20pt;
+    color:rgb(58, 58, 58);
+    margin: 0px;
+
+
+}
+
+
+header#cabecalho-art h2 {
+    font-size: 13pt;
+    color: rgb(112, 109, 109);
+    background-color: white;
+   }
+
+
+header#cabecalho-art h3 {
+    font-size: 12pt;
+    color: rgb(98, 98, 98);
+
+
+}
+
+.dir {
+    text-align: right;
+}
+
+table#spec {
+    border: 1px solid gray;  
+    border-spacing: 0px;  
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+table#spec td {
+    border: 1px solid black;
+    padding:10px;
+    text-align: center;
+
+}
+
+table#spec td.ce {
+    color: white;
+    background-color: rgb(58, 58, 58);
+    vertical-align: middle;
+    font-weight: bolder;
+
+}
+
+table#spec td.cd{
+    background-color: gray;
+
+}
+
+table#spec caption {
+
+    color:gray;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+
+table#spec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+
+}
+aside#lateral {
+    display: block;
+    width: 500px;
+    float: right; /*Aparecer na direita, tem que estar com o display:block*/
+
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #535252;
+}
+
+aside#lateral h2 {
+    background-color: #4e4e4e;
+    font-size: 15pt;
+    color:rgb(255, 255, 255)
+    
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid gray;
+
+
+}
+
+footer#rodape h3{
+    text-align: center;
+}
+
